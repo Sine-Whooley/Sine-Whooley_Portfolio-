@@ -1,0 +1,765 @@
+/* ----------- Global Styling ----------- */
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(170, 183, 255);
+}
+
+/* Links Styling */
+a {
+    text-decoration: none;
+    color: rgb(170, 183, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    padding: 0 1%;
+}
+
+/* Link Hover Styling */
+a:hover {
+    background-color: rgb(151, 163, 228);
+    color: black;
+}
+
+/* Logo Styling */
+.logo {
+    position: absolute;
+    overflow: hidden;
+    margin-top: 1%;
+    margin-left: 1%;
+    border: none;
+}
+
+/* Page Header Set-up */
+/* Hello & Welcome, Portfolio, CV */
+.pageHeader {
+    text-align: center;
+    margin: 0;
+}
+
+/* Heading Styling */
+/* Sine Whooley */
+.heading {
+    position: absolute;
+    overflow: hidden;
+    margin-top: 1%;
+    margin-left: 10%;
+    color: rgb(170, 183, 255);
+    background-color: black;
+}
+
+/* Name on Hover */
+.heading:hover {
+    transform: scale(100%,125%);
+}
+
+/* Images General Styling */
+img {
+    border: 2px solid black;
+    border-radius: 5%;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+/* Footer Styling */
+footer {
+    padding: 1%;
+    margin-top: 2%;
+    margin-left: 20%;
+    color: rgb(170, 183, 255);
+    background-color: black;
+    position: relative;
+}
+
+.footerContainer {
+    display: table;
+    width: 100%;
+}
+
+.footerCol {
+    display: table-cell;
+}
+
+.footerCol h3 {
+    margin-bottom: 2%;
+}
+
+
+/* --------------------- */
+/*  Navigation Bar */
+
+/* Set-up */
+.navbar {
+    color: rgb(170, 183, 255);
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2%;
+    padding: 1%;
+    padding-right: 5%;
+}
+
+/* Button Set-up */
+.navButton {
+    color: rgb(170, 183, 255);
+    background-color: black;
+    font-size: large;
+    border: none;
+    padding: 0.8%;
+}
+
+/* Button Hover Effect */
+.navButton:hover {
+    background-color: rgb(151, 163, 228);
+    color: black;
+    border-radius: 15%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.365), 0 10px 20px 0  rgba(151, 162, 228, 0.662);
+}
+
+/* Nav Bar Menu (Desktop Screen) */
+.menuButtons {
+    display: contents;
+}
+
+/* Hamburger Menu Set-up */
+.displayHamMenuBut {
+    display: none;
+}
+
+/* Hamburger Menu Drop Down */
+.navbarMini {
+    display: none;
+}
+
+/* Background Set-up */
+.homeBackGStyle {
+    margin: 0%;
+    padding: 0%;
+    color: black;
+    background-color: rgb(170, 183, 255);
+}
+
+/* Top Curve Set-up */
+.homeContainerTopDivide {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.homeContainerTopDivide svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 173px;
+}
+
+.homeContainerTopDivide .shape-fill {
+    fill: black;
+}
+
+/* Bottom Set-up */
+.homeContainerBottomDivide {
+    transform: rotate(180deg);
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.homeContainerBottomDivide svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 173px;
+}
+
+
+/* ---------------------------------------------------------------- */
+/* ------------------------ Home Page ------------------------ */
+
+/* About Section Styling */
+.aboutRow {
+    display: flex;
+}
+
+.aboutCol {
+    float: left;
+    width: 50%;
+    flex: 50%;
+    margin-top: 4%;
+    margin-bottom: 1%;
+}
+
+.aboutRow::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.aboutContainer {
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: auto;
+
+    font-size: large;
+    background-color: transparent;
+}
+
+.aboutParagraph {
+    font-weight: normal;
+    display: flex;
+    z-index: 1;
+}
+
+/* --------------------- */
+/* Slideshow Set-Up */
+/* Image Set up  */
+.homeSlideImg {
+    width: 98%;
+    align-items: center;
+    position: relative;
+    margin-left: 8%;
+    margin-right: 20%;
+    margin-top: 1%;
+    margin-bottom: 10%;
+}
+
+.homeImage {
+    display: none;
+}
+
+/* Button Styling */
+.slideButtons {
+    cursor: pointer;
+    position: absolute;
+    top: 70%;
+    width: auto;
+    padding: 16px;
+    margin-top: 10%;
+    color: rgb(0, 0, 0);
+    background-color: rgb(170, 183, 255);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Previous Button Hover Effect */
+.slidePrevious:hover {
+    background-color: rgb(144, 155, 216);
+}
+
+/* Next Button */
+.slideNext {
+    right: 52%;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Next Button Hover Effect */
+.slideNext:hover {
+    background-color: rgb(144, 155, 216);
+}
+
+/* Fading Animation */
+.fadeEffect {
+    animation-name: fadeEffect;
+    animation-duration: 3s;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0.1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* ---------------------------------------------------------------- */
+/* ------------------------ Portfolio ------------------------ */
+
+/* Portfolio Nav Btns Styling & Positioning */
+/* Positioning */
+.portNavButtons { 
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Styling */
+.portButton {
+    background-color: black;
+    color: rgb(144, 155, 216);
+
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+    margin: 2%;
+    margin-left: 5%;
+
+    border-radius: 50%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Hover Style */
+.portButton:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.393), 0 17px 50px 0 rgba(0, 0, 0, 0.356);
+    color: white;
+}
+
+/* Background Styling */
+.portContents {
+    background-color: rgb(170, 183, 255);
+    color: black;
+}
+
+/* Heading of Image Sections */
+/* Animals, Nature, Animals, Digital Drawings, Crafts, Games */
+.imageTitle {   
+    text-align: center;
+}
+
+
+/* Painting Imgs Set-up */
+.imgPaint {
+    width: 90%;
+    margin-bottom: 5%;
+}
+
+.paintCol {
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+.paintRow::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+/* Display Paint */
+.displayPaint {
+    display: none;
+}
+
+/* --------------------- */
+/*  Digital Art */
+.imgDigital {
+    width: 90%;
+    margin-bottom: 5%;
+}
+
+/* Digi Art Col-2 Positioning */
+.rockClimber {
+    margin-top: 10%;
+}
+
+.digitalCol {
+    float: left;
+    text-align: center;
+    width: 45%;
+    padding: 10px;
+}
+
+.digitalRow::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+/* Display Digital Art */
+.displayDigitalArt {
+    display: none;
+}
+
+/* --------------------- */
+/* Crafts */
+.imgCraft {
+    width: 90%;
+    margin-bottom: 5%;
+}
+
+.craftCol {
+    float: left;
+    text-align: center;
+    width: 45%;
+    padding: 10px;
+}
+
+.craftRow::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.colRight{
+    margin-top: 10%;
+}
+
+/* Display Crafts */
+.displayCraft {
+    display: none;
+}
+
+/* --------------------- */
+/* Games */
+.imgGame {
+    width: 90%;
+    margin-bottom: 5%;
+}
+
+.gameCol {
+    float: left;
+    text-align: center;
+    width: 45%;
+    padding: 10px;
+}
+
+.gameRow::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+/* Display Games */
+.displayGame {
+    display: none;
+}
+
+/* ---------------------------------------------------------------- */
+/* ------------------------ CV ------------------------ */
+.cvBlock{
+    background-color: rgb(157, 169, 234);
+    width: 80%;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-left: 10%;
+    margin-bottom: 1%;
+}
+
+.cvSection{
+    text-align: left;
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: auto;
+    list-style-type: decimal;
+}
+
+.cvSectionHeaders{
+    text-align: center;
+}
+
+
+
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+
+
+
+/* ------------------------ Laptop / Large Tablet Size ------------------------ */  
+@media only screen and (max-width: 1200px)
+{
+    /* -------- Global Set-up (Laptop / Large Tablet)-------- */
+    .heading {
+        position: absolute;
+        overflow: hidden;
+        margin-top: 0.5%;
+        margin-left: 10%;
+        color: rgb(170, 183, 255);
+        background-color: black;
+    }
+    
+    .heading:hover {
+        transform: scale(100%,125%);
+    }
+
+    /* Page Header Set-up */
+    /* Hello & Welcome, Portfolio, CV */
+    .pageHeader {
+        text-align: center;
+        margin: 0;
+        /* font-size: medium; */
+    }
+}
+
+
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+
+
+
+/* ------------------------ Large Tablet Size ------------------------ */
+
+@media only screen and (max-width: 1030px)
+{
+    /* -------- Home Page -------- */
+    /* About Section Styling */
+    .aboutRow {
+        display: block;
+    }
+
+    .aboutCol {
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 1%;
+    }
+
+    /* Slideshow Set-Up */
+    /* Image Set up  */
+    .homeSlideImg {
+        align-items: center;
+        margin: 1%;
+        width: 100%;
+    }
+
+    /* Button Styling */
+    .slideButtons {
+        top: 65%;
+        padding: 3%;
+    }
+
+    .slidePrevious {
+        left: 2%;
+    }
+
+    /* Next Button */
+    .slideNext {
+        right: 2%;
+        border-radius: 3px 0 0 3px;
+    }
+}
+
+
+
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+
+
+
+/* ------------------------ Tablet / Large Mobile Size ------------------------ */
+
+@media only screen and (max-width: 800px)
+{
+    /* ------ Global Set-Up (Tablet / Large Mobile) ------ */
+    .heading {
+        display: none;
+    }
+
+    .logo {
+        width: 75px;
+        z-index: 1;
+    }
+    
+    .headingContainer {
+        height: 12%;
+    }
+
+    
+    .hamMenuButton {
+        display: contents;
+    }
+
+    /* Navigation Buttons (Mobile) */
+    /* To display Hamburger Menu */
+    .displayHamMenuBut {
+        display: contents;
+    }
+
+    /* To hide Drop-Down contents prior to pressing hamMenu btn */
+    .displayDropDown {
+        display: none;
+    } 
+
+    /* Postion of hamMenu Btns */
+    /* Home, Portfolio, CV */
+    .navbarMini {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+
+        text-align: center;
+
+        margin-top: 2%; 
+        margin-bottom: 2%;
+    }
+
+    /* Styling of hamMenu Btns */
+    .navButMini {
+        color: rgb(170, 183, 255);
+        background-color: black;
+        font-size: large;
+        border: none;
+
+        padding: 2%;
+    }
+
+    /* Hover Effect (Mobile) */
+    .navButMini:hover {
+        background-color: rgb(151, 163, 228);
+        color: black;
+        border-radius: 15%;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.365), 0 10px 20px 0  rgba(151, 162, 228, 0.662);
+    }
+
+    /* To hide Menu from Destop view */
+    .menuButtons {
+        display: none;
+    }
+}
+
+/* General Responsive Styling */
+@media only screen and (max-width: 650px)
+{
+    /* -------- Global Set-up -------- */
+    /* Footer Styling */
+    footer {
+        padding: 1%;
+        margin-top: 2%;
+        margin-left: 10%;
+        margin-right: 5%;
+        color: rgb(170, 183, 255);
+        background-color: black;
+        position: relative;
+    }
+
+    .footerContainer {
+        display: table;
+        width: 100%;
+    }
+
+    .footerCol {
+        display: table-cell;
+    }
+
+    .footerCol h3 {
+        margin-bottom: 2%;
+    }
+
+    /* -------- Portfolio Page -------- */
+    /* Painting Imgs Set-up */
+    .imgPaint {
+        width: 90%;
+        margin-bottom: 5%;
+    }
+    
+    .paintCol {
+        width: 45%;
+    }
+}
+
+
+
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+
+
+
+/* ------------------------ Mobile Size ------------------------ */
+@media only screen and (max-width: 430px)
+{
+    /* -------- Global Set-up -------- */
+    .heading {
+         display: none;  
+    }
+    
+    /* Page Header Set-up */
+    /* Hello & Welcome, Portfolio, CV */
+    .pageHeader {
+        text-align: center;
+        margin: 0;
+    }
+
+    .menuButtons {
+        display: none;
+    }
+    
+    .hamMenuButton {
+        display: contents;
+    }
+
+    .logo {
+        width: 55px;
+        z-index: 1;
+    }
+
+    /* Footer Styling */
+    footer {
+        margin-left: 5%;
+        color: rgb(170, 183, 255);
+        background-color: #000000;
+        position: relative;
+    }
+
+    .footerContainer {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .footerCol {
+        margin-bottom: 10%;
+    }
+
+    .linkedInLink {
+        margin-top: 2%;
+    }
+
+    /* -------- Portfolio Page -------- */
+    /* Painting Imgs Set-up */
+    .imgPaint {
+        width: 90%;
+        margin-bottom: 5%;
+    }
+
+    .paintCol {
+        width: 90%;
+    }
+
+    .imgDigital {
+        width: 90%;
+        margin-bottom: 5%;
+    }
+
+    .digitalCol {
+        width: 90%;
+    }
+
+    .imgCraft {
+        width: 90%;
+        margin-bottom: 5%;
+    }
+
+    .craftCol {
+        width: 90%;
+    }    
+
+    .imgGame {
+        width: 90%;
+        margin-bottom: 5%;
+    }
+
+    .gameCol {
+        width: 90%;
+    }
+}
