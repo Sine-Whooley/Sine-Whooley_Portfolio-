@@ -1,0 +1,135 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sine Whooley">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Síne Whooley Portfolio</title>
+    <link href="assets/css/stylesheet.css" rel="stylesheet" type="text/css"> <!-- To include the CSS file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <section class="headerContainer">
+            
+            <a href="index.html"><img class="logo" src="assets/img/LOGO_White-Blue.png" alt="logoImg" width="8%"></a>
+
+            <div class="heading">
+                <h1>SÍNE WHOOLEY</h1>
+            </div>
+            
+            <nav class="navbar">
+                <!-- Navigation Bar -->
+                <div class="menuButtons">
+                    <button class="navButton"><a href="index.html">Home</a></button>
+                    <button class="navButton"><a href="portfolio.html">Portfolio</a></button>
+                    <button class="navButton"><a href="cv.html">CV</a></button>
+                </div>
+            
+                <!-- Hamburger Menu Button (Mobile Display) -->
+                <div class="displayHamMenuBut" id="displayHamMenuBut">
+                    <button class="navButton">&#9776;</button>
+                </div>
+            </nav>
+            
+            <nav class="navbarMini">
+                <!-- Hamburger Menu Drop-Down -->
+                <div class="displayDropDown" id="displayDropDown">
+                        <button class="navButMini dropDownNav"><a href="index.html">Home</a></button>
+                        <button class="navButMini dropDownNav"><a href="portfolio.html">Portfolio</a></button>
+                        <button class="navButMini dropDownNav"><a href="cv.html">CV</a></button>
+                </div>
+            </nav>
+        </section>
+    </header> 
+
+    <!-- Home Section -->
+    <div class="homeBackGStyle">
+        <div class="homeContainer">
+            <div class="homeContainerTopDivide">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 180" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+
+            <h1 class="pageHeader">Hello & Welcome!</h1>
+            <hr color="black" width="90%"> 
+
+            <div class="aboutRow">
+                <div class="aboutCol">
+                    <!-- Home Photo Slide Show -->
+                    <div class="homeSlideImg">
+                        <div class="homeImage fadeEffect">
+                            <img src="assets/img/paintings/Tunnel.jpg" alt="" width="80%">
+                        </div>
+                        <div class="homeImage fadeEffect">
+                            <img src="assets/img/digital-art/Purple.png" alt="" width="80%">
+                        </div>
+                        <div class="homeImage fadeEffect">
+                            <img src="assets/img/digital-art/Pop-Art.png" alt="" width="80%">
+                        </div>
+                        <div class="homeImage fadeEffect">
+                            <img src="assets/img/paintings/Turtle.jpg" alt="" width="80%">
+                        </div>
+                        <div class="homeImage fadeEffect">
+                            <img src="assets/img/paintings/Face A 5x5 Plain.jpg" alt="" width="80%">
+                        </div>
+                        <div class="homeImage fadeEffect">
+                            <img src="assets/img/paintings/Bridge.jpg" alt="" width="80%">
+                        </div>
+                    </div>
+
+                    <!-- Left & Right Arrows -->
+                    <a class="slideButtons slidePrevious" onclick="nextSlide(-1)">&#10094;</a>
+                    <a class="slideButtons slideNext" onclick="nextSlide(1)">&#10095;</a>
+                </div>
+
+                <div class="aboutCol">
+                    <div class="aboutContainer">
+                        <p class="aboutParagraph">
+                            Hi, I'm Síne, a versatile creative professional based in Carlow, Ireland, with a strong focus on web development, animation, and graphic design.  &star;
+                        </p>
+                        <p class="aboutParagraph">
+                            I am currently pursuing a degree in Computing in Interactive Digital Art and Design at South East Technological University (SETU), where I am expanding my expertise across multiple creative and technical disciplines.
+                        </p>
+                        <p class="aboutParagraph">
+                            I've always had a passion for design, so at 23 years old I began college to hone my skills and to learn even more, diversifying my skillset entirely.
+                        </p>
+        
+                        <p class="aboutParagraph">
+                            I am passionate about integrating design with technology to create visually compelling and user-centric solutions. I am excited to bring my diverse skill set to a dynamic team where I can contribute to innovative projects and further develop my abilities in web development, animation, and graphic design.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="homeContainerBottomDivide">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footerContainer">
+            <div class="footerCol">
+                <h3>For more information:</h3>
+                <p><a href="https://www.linkedin.com/in/sine-whooley/">LinkedIn</a></p>
+            </div>
+            <div class="footerCol">
+                <h3>Get in contact:</h3>
+                <p><strong>Email:</strong> sinewhooley@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- To include the JavaScript file -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

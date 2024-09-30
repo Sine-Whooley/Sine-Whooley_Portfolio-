@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sine Whooley">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Síne Whooley Portfolio</title>
+    <link href="assets/css/stylesheet.css" rel="stylesheet" type="text/css"> <!-- To include the CSS file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <!------------------------------------------------------------------------------------>
+    <!-- Header -->
+    <header>
+        <section class="headerContainer">
+            
+            <a href="index.html"><img class="logo" src="assets/img/LOGO_White-Blue.png" alt="logoImg" width="8%"></a>
+
+            <div class="heading">
+                <h1>SÍNE WHOOLEY</h1>
+            </div>
+            
+            <nav class="navbar">
+                <!-- Navigation Bar -->
+                <div class="menuButtons">
+                    <button class="navButton"><a href="index.html">Home</a></button>
+                    <button class="navButton"><a href="portfolio.html">Portfolio</a></button>
+                    <button class="navButton"><a href="cv.html">CV</a></button>
+                </div>
+            
+                <!-- Hamburger Menu Button (Mobile Display) -->
+                <div class="displayHamMenuBut" id="displayHamMenuBut">
+                    <button class="navButton">&#9776;</button>
+                </div>
+            </nav>
+            
+            <nav class="navbarMini">
+                <!-- Hamburger Menu Drop-Down -->
+                <div class="displayDropDown" id="displayDropDown">
+                        <button class="navButMini dropDownNav"><a href="index.html">Home</a></button>
+                        <button class="navButMini dropDownNav"><a href="portfolio.html">Portfolio</a></button>
+                        <button class="navButMini dropDownNav"><a href="cv.html">CV</a></button>
+                </div>
+            </nav>
+        </section>
+    </header>
+
+    <!------------------------------------------------------------------------------------>
+    <!-- Curve Section Top -->
+    <div class="homeBackGStyle">
+        <div class="homeContainer">
+            <div class="homeContainerTopDivide">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 180" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------------------------------------------------------>
+    <!-- Portfolio Buttons -->
+    <div class="portContents">
+
+        <!-- Page Heading -->
+        <h1 class="pageHeader"> Portfolio</h1> 
+        <hr color="black" width="90%"> 
+
+        <!-- Portfolio Navigation Buttons -->
+        <section class="portNavButtons" id="portNavButtons"></section>
+            <button class="portButton" id="buttonPaint" onclick="showPaint()"> PAINTINGS </button>
+            <button class="portButton" id="buttonDigArt" onclick="showDigital()"> DIGITAL ART </button>
+            <button class="portButton" id="buttonCrafts" onclick="showCraft()"> CRAFTS </button>
+            <button class="portButton" id="buttonGames" onclick="showGame()"> GAMES </button>
+        </section>
+    
+        <!-- Portfolio Navigation Buttons (Mobile) -->
+
+
+
+
+    <!------------------------------------------------------------------------------------>
+        <!-- Painting Grid -->
+        <div class="displayPaint" id="displayPaint">
+            <div class="paintRow">
+                <div class="paintCol">
+                    <h3 class="imageTitle">Animals</h3>
+                    <img class="imgPaint" src="assets/img/paintings/Turtle.jpg" alt="Turtle">
+                    <br>
+                    <img class="imgPaint" src="assets/img/paintings/Dragon.jpg" alt="Dragon">                    
+                    <br>
+                    <img class="imgPaint" src="assets/img/paintings/Owl.jpg" alt="Owl">
+                    <br>
+                    <img class="imgPaint" src="assets/img/paintings/Pig-Reading.jpg" alt="Pig Reading">
+                </div>
+        
+                <div class="paintCol">
+                    <h3 class="imageTitle">Nature</h3>
+                    <img class="imgPaint" src="assets/img/paintings/Flowers-Green.jpg" alt="Green Flowers">
+                    <br>
+                    <img class="imgPaint" src="assets/img/paintings/Bridge.jpg" alt="Bridge">
+                    <br>                    
+                    <img class="imgPaint" src="assets/img/paintings/Flowers-Blue.jpg" alt="Blue Flowers">
+                    <br>
+                    <img class="imgPaint" src="assets/img/paintings/Tunnel.jpg" alt="Tunnel">
+                </div>
+
+                <div class="paintCol">
+                    <h3 class="imageTitle">Animals</h3>
+                    <img class="imgPaint" src="assets/img/paintings/Dog.jpg" alt="Dog">
+                    <br>
+                    <img class="imgPaint" src="assets/img/paintings/Face A 5x5 Plain.jpg" alt="Dripping Face">
+                    <br>
+                    <img class="imgPaint" src="assets/img/paintings/Lion.jpg" alt="Lion">
+                </div>   
+            </div>
+        </div>
+
+        <!------------------------------------------------------------------------------------>
+        <!-- Digital Art Grid -->
+        <div class="displayDigitalArt" id="displayDigitalArt">
+            <div class="digitalRow">
+                <div class="digitalCol">
+                    <h3 class="imageTitle">Digital Drawings</h3>
+                    <img class="imgDigital" src="assets/img/digital-art/Purple.png" alt="Purple"> 
+                    <br>
+                    <img class="imgDigital" src="assets/img/digital-art/Pop-Art.png" alt="Pop-Art">
+                </div>
+
+                <div class="digitalCol">
+                    <img class="imgDigital rockClimber" src="assets/img/digital-art/Rock-Climber.png" alt="Rock-Climber">
+                </div>
+            </div>
+        </div>
+
+    <!------------------------------------------------------------------------------------>
+        <!-- Crafts Grid -->
+        <div class="displayCraft" id="displayCraft">
+            <div class="craftRow">
+                <div class="craftCol">
+                    <h3 class="imageTitle">Christmas Crafts</h3>
+                    <img class="imgCraft" src="assets/img/crafts/4.jpg " alt="">                    
+                    <br>
+                    <img class="imgCraft" src="assets/img/crafts/2.jpg" alt="">
+                    <br>
+                    <img class="imgCraft" src="assets/img/crafts/5.jpg" alt="">
+                </div>
+            
+                <div class="craftCol">
+                    <img class="imgCraft colRight" src="assets/img/crafts/1.jpg" alt="">
+                    <br>
+                    <img class="imgCraft" src="assets/img/crafts/3.jpg" alt="">
+                    <br>
+                    <img class="imgCraft" src="assets/img/crafts/6.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        
+    <!------------------------------------------------------------------------------------>
+        <!-- Games Grid -->
+        <div class="displayGame" id="displayGame">
+            <div class="gameRow">
+                <div class="gameCol">
+                    <h3 class="imageTitle">Games</h3>
+                    <img class="imgGame" src="assets/img/games/Opening-Splash.png" alt="">            
+                </div>
+                
+                <div class="gameCol">
+                    <img class="imgGame colRight" src="assets/img/games/playerB.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!------------------------------------------------------------------------------------>
+    <!-- Curve Section Bottom -->
+    <div class="homeBackGStyle">
+        <div class="homeContainer bottomContainer">
+            <div class=" homeContainerBottomDivide">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------------------------------------------------------>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footerContainer">
+            <div class="footerCol">
+                <h3>For more information:</h3>
+                <a class="linkedInLink" href="https://www.linkedin.com/in/sine-whooley/">LinkedIn</a>
+            </div>
+            <div class="footerCol">
+                <h3>Get in contact:</h3>
+                <p><strong>Email:</strong> sinewhooley@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!------------------------------------------------------------------------------------>
+    <!------------------------------------------------------------------------------------>
+    <!------------------------------------------------------------------------------------>
+
+    <!-- To include the JavaScript file -->
+    <script>
+        const displayPaintCol = document.getElementById('displayPaint');
+        var displayPaintColumn = 1;
+
+        function showPaint()
+        {
+            console.log("SHOW ME PAINTINGS");
+
+            if(displayPaintCol === "none") 
+            {
+                displayPaintColumn = 0;
+                displayDigitalArt = 1;
+                displayCraft = 1;
+                displayGame = 1;
+            }
+
+            if(displayPaintColumn == 0)
+            {
+                displayPaintCol.style.display = 'block';
+                displayPaintColumn = 1;
+            }
+            else 
+            {
+                displayPaintCol.style.display = 'none';
+                displayPaintColumn = 0;
+            }
+        }
+
+
+        const displayDigitalCol = document.getElementById('displayDigitalArt');
+        var displayDigitalArt = 0;
+
+        function showDigital()
+        {
+            console.log("SHOW ME DIGITAL PAINTINGS");
+
+            if(displayDigitalArt == 1)
+            {
+                displayDigitalCol.style.display = 'block';
+                displayDigitalArt = 0;
+            }
+            else 
+            {
+                displayDigitalCol.style.display = 'none';
+                displayDigitalArt = 1;
+            }
+        }
+
+
+        const displayCrafts = document.getElementById('displayCraft');
+        var displayCraft = 0;
+
+        function showCraft()
+        {
+            console.log("SHOW ME CRAFTS");
+
+            if(displayCraft == 1)
+            {
+                displayCrafts.style.display = 'block';
+                displayCraft = 0;
+            }
+            else 
+            {
+                displayCrafts.style.display = 'none';
+                displayCraft = 1;
+            }
+        }
+
+        const displayGames = document.getElementById('displayGame');
+        var displayGame = 0;
+
+        function showGame()
+        {
+            console.log("SHOW ME CRAFTS");
+
+            if(displayGame == 1)
+            {
+                displayGames.style.display = 'block';
+                displayGame = 0;
+            }
+            else 
+            {
+                displayGames.style.display = 'none';
+                displayGame = 1;
+            }
+        }
+        
+        if(displayPaintCol === "contents")
+        {
+            displayDigitalCol === "none";
+            displayCraft = 0;
+            displayGame = 0;
+        }
+
+    </script>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
