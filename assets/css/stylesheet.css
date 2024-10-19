@@ -62,8 +62,8 @@ img {
 /* Footer Styling */
 footer {
     padding: 1%;
-    margin-top: 2%;
-    margin-left: 20%;
+    /* margin-top: 2%; */
+    /* margin-left: 20%; */
     color: rgb(170, 183, 255);
     background-color: black;
     position: relative;
@@ -291,8 +291,9 @@ footer {
 /* Positioning */
 .portNavButtons { 
     text-align: center;
+
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-evenly; 
 }
 
 /* Styling */
@@ -300,13 +301,14 @@ footer {
     background-color: black;
     color: rgb(144, 155, 216);
 
+
     padding-left: 6%;
     padding-right: 6%;
     padding-top: 1%;
     padding-bottom: 1%;
 
     margin: 2%;
-    margin-left: 5%;
+    /* margin-left: 5%; */
 
     border-radius: 50%;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -316,6 +318,13 @@ footer {
 .portButton:hover {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.393), 0 17px 50px 0 rgba(0, 0, 0, 0.356);
     color: white;
+}
+
+.helpfulHints{
+    text-align: center;
+    /* display: block; */
+    /* margin-left: 10%; */
+
 }
 
 /* Background Styling */

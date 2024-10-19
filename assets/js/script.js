@@ -46,46 +46,6 @@ function showSlideShow(image) {
 
 
 //-------------------- Portfolio --------------------//
-// Using jQuery
-// To Show & Hide Portfolio Menu-items
-
-// $(document).ready(function()
-// {
-//     $("#buttonPaint").click(function()
-//     {
-//         $("#displayPaint").toggle();
-//     });
-// });
 
 
-
-// Function to toggle the visibility of the 'Paintings' section
-// function togglePaint() {
-//     const displayPaint = document.querySelector('.paintRow');
-//     displayPaint.classList.toggle('displayPaint'); // Adds or removes the 'hidden' class
-// }
-
-
-// function togglePaint()
-// {
-    
-// }
-
-// function toggleColumn(column1) {
-//     const column = document.getElementById(`column${columnNumber}`);
-//     if (column.style.display === "none") {
-//         column.style.display = "flex"; // Show the column
-//     } else {
-//         column.style.display = "none"; // Hide the column
-//     }
-// }
-
-// function showPaint()
-// {
-//     const randomTestJS = document.getElementById("randomTest")
-//     if(randomTestJS === "none")
-//     {
-//         randomTestJS.style.display = "contents";
-//     }
-// }
 
