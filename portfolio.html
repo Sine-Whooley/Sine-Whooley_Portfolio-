@@ -17,7 +17,7 @@
     <header>
         <section class="headerContainer">
             
-            <a href="index.html"><img class="logo" src="assets/img/LOGO_White-Blue.png" alt="logoImg" width="8%"></a>
+            <a href="index.html"><img class="logo" src="assets/img/LOGO_White-Green.png" alt="logoImg" width="8%"></a>
 
             <div class="heading">
                 <h1>SÍNE WHOOLEY</h1>
@@ -67,7 +67,7 @@
         <!-- Page Heading -->
         <h1 class="pageHeader"> Portfolio </h1>
         <hr color="black" width="90%"> 
-        <h4 class="helpfulHints">Double-Click Buttons below to Display content!</h4> 
+        <h4 class="helpfulHints">Click Buttons below to Display / Hide Content!</h4> 
         <!-- Portfolio Navigation Buttons -->
         <section class="portNavButtons" id="portNavButtons">
             <button class="portButton" id="buttonPaint" onclick="showPaint()"> PAINTINGS </button>
@@ -211,103 +211,65 @@
     <!------------------------------------------------------------------------------------>
     <!------------------------------------------------------------------------------------>
 
-    <!-- To include the JavaScript file -->
+    <!-- Javascript in file -->
     <script>
         const displayPaintCol = document.getElementById('displayPaint');
-        var displayPaintColumn = 1;
+        let togglePaint = false;
 
         function showPaint()
         {
             console.log("SHOW ME PAINTINGS");
 
-            if(displayPaintCol === "none") 
-            {
-                displayPaintColumn = 0;
-                displayDigitalArt = 1;
-                displayCraft = 1;
-                displayGame = 1;
-            }
-
-            if(displayPaintColumn == 0)
-            {
-                displayPaintCol.style.display = 'block';
-                displayPaintColumn = 1;
-            }
-            else 
-            {
-                displayPaintCol.style.display = 'none';
-                displayPaintColumn = 0;
-            }
+            togglePaint = !togglePaint;
+            displayPaintCol.style.display = togglePaint ? 'block' : 'none';
         }
 
 
         const displayDigitalCol = document.getElementById('displayDigitalArt');
-        var displayDigitalArt = 0;
+        let toggleDigitalArt = false;
 
         function showDigital()
         {
             console.log("SHOW ME DIGITAL PAINTINGS");
 
-            if(displayDigitalArt == 1)
-            {
-                displayDigitalCol.style.display = 'block';
-                displayDigitalArt = 0;
-            }
-            else 
-            {
-                displayDigitalCol.style.display = 'none';
-                displayDigitalArt = 1;
-            }
+            toggleDigitalArt = !toggleDigitalArt;
+            displayDigitalCol.style.display = toggleDigitalArt ? 'block' : 'none';
         }
 
 
         const displayCrafts = document.getElementById('displayCraft');
-        var displayCraft = 0;
+        let toggleCrafts = false;
 
         function showCraft()
         {
             console.log("SHOW ME CRAFTS");
 
-            if(displayCraft == 1)
-            {
-                displayCrafts.style.display = 'block';
-                displayCraft = 0;
-            }
-            else 
-            {
-                displayCrafts.style.display = 'none';
-                displayCraft = 1;
-            }
+            toggleCrafts = !toggleCrafts;
+            displayCrafts.style.display = toggleCrafts ? 'block' : 'none';
         }
 
-        const displayGames = document.getElementById('displayGame');
-        var displayGame = 0;
+        // const displayGames = document.getElementById('displayGame');
+        // let toggleGames = false;
 
-        function showGame()
-        {
-            console.log("SHOW ME CRAFTS");
+        // function showGames()
+        // {
+        //     console.log("SHOW ME GAMES");
 
-            if(displayGame == 1)
-            {
-                displayGames.style.display = 'block';
-                displayGame = 0;
-            }
-            else 
-            {
-                displayGames.style.display = 'none';
-                displayGame = 1;
-            }
-        }
+        //     toggleGames = !toggleGames;
+        //     displayGames.style.display = toggleGames ? 'block' : 'none';
+        // }        
+
         
-        if(displayPaintCol === "contents")
-        {
-            displayDigitalCol === "none";
-            displayCraft = 0;
-            displayGame = 0;
-        }
+        // if(displayPaintCol === "contents")
+        // {
+        //     displayDigitalCol === "none";
+        //     displayCraft = 0;
+        //     displayGame = 0;
+        // }
 
     </script>
 
+<!-- To include the Javascript file -->
     <script src="assets/js/script.js"></script>
 </body>
 
