@@ -1,13 +1,14 @@
 /* ----------- Global Styling ----------- */
 body {
     background-color: rgb(0, 0, 0);
-    color: rgb(170, 183, 255);
+    color: rgb(244, 245, 253);
 }
 
 /* Links Styling */
 a {
     text-decoration: none;
-    color: rgb(170, 183, 255);
+    color: rgb(217, 255, 250);
+
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: medium;
     padding: 0 1%;
@@ -15,7 +16,8 @@ a {
 
 /* Link Hover Styling */
 a:hover {
-    background-color: rgb(151, 163, 228);
+    /* background-color: rgb(151, 163, 228); Old BG Colour - Blue */
+    background-color: rgb(217, 255, 250);
     color: black;
 }
 
@@ -42,14 +44,19 @@ a:hover {
     overflow: hidden;
     margin-top: 1%;
     margin-left: 10%;
-    color: rgb(170, 183, 255);
+
+    color: rgb(217, 255, 250);
     background-color: black;
 }
 
-/* Name on Hover */
-.heading:hover {
-    transform: scale(100%,125%);
+.myName{
+    color: rgb(217, 255, 250);
 }
+
+/* Name on Hover */
+/* .heading:hover {
+    transform: scale(100%,125%);
+} */
 
 /* Images General Styling */
 img {
@@ -61,11 +68,13 @@ img {
 
 /* Footer Styling */
 footer {
-    padding: 1%;
-    /* margin-top: 2%; */
-    /* margin-left: 20%; */
-    color: rgb(170, 183, 255);
+    padding: 2% 10%;
+    width: 100%;
+    margin-left: 0;
+
+    color: rgb(217, 255, 250);
     background-color: black;
+    
     position: relative;
 }
 
@@ -88,7 +97,8 @@ footer {
 
 /* Set-up */
 .navbar {
-    color: rgb(170, 183, 255);
+    /* color: rgb(170, 183, 255);  Old Colour - Blue*/
+    color: rgb(217, 255, 250);
     background-color: rgb(0, 0, 0);
     display: flex;
     justify-content: flex-end;
@@ -99,7 +109,7 @@ footer {
 
 /* Button Set-up */
 .navButton {
-    color: rgb(170, 183, 255);
+    color: rgb(217, 255, 250);
     background-color: black;
     font-size: large;
     border: none;
@@ -108,7 +118,7 @@ footer {
 
 /* Button Hover Effect */
 .navButton:hover {
-    background-color: rgb(151, 163, 228);
+    background-color: rgb(176, 248, 238);
     color: black;
     border-radius: 15%;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.365), 0 10px 20px 0  rgba(151, 162, 228, 0.662);
@@ -134,7 +144,7 @@ footer {
     margin: 0%;
     padding: 0%;
     color: black;
-    background-color: rgb(170, 183, 255);
+    background-color: rgb(217, 255, 250);
 }
 
 /* Top Curve Set-up */
@@ -167,6 +177,7 @@ footer {
     width: 100%;
     overflow: hidden;
     line-height: 0;
+    margin-bottom: -2px;
 }
 
 .homeContainerBottomDivide svg {
@@ -205,15 +216,11 @@ footer {
     margin-right: 10%;
 
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: auto;
-
-    font-size: large;
     background-color: transparent;
 }
 
 .aboutParagraph {
-    font-weight: normal;
     display: flex;
     z-index: 1;
 }
@@ -239,12 +246,14 @@ footer {
 .slideButtons {
     cursor: pointer;
     position: absolute;
-    top: 70%;
+    top: 50%;
     width: auto;
     padding: 16px;
     margin-top: 10%;
+
     color: rgb(0, 0, 0);
-    background-color: rgb(170, 183, 255);
+    background-color: rgb(217, 255, 250);
+
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -254,7 +263,7 @@ footer {
 
 /* Previous Button Hover Effect */
 .slidePrevious:hover {
-    background-color: rgb(144, 155, 216);
+    background-color: rgb(192, 241, 234);
 }
 
 /* Next Button */
@@ -265,7 +274,7 @@ footer {
 
 /* Next Button Hover Effect */
 .slideNext:hover {
-    background-color: rgb(144, 155, 216);
+    background-color: rgb(192, 241, 234);
 }
 
 /* Fading Animation */
@@ -299,8 +308,7 @@ footer {
 /* Styling */
 .portButton {
     background-color: black;
-    color: rgb(144, 155, 216);
-
+    color: rgb(217, 255, 250);
 
     padding-left: 6%;
     padding-right: 6%;
@@ -308,8 +316,6 @@ footer {
     padding-bottom: 1%;
 
     margin: 2%;
-    /* margin-left: 5%; */
-
     border-radius: 50%;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -322,14 +328,12 @@ footer {
 
 .helpfulHints{
     text-align: center;
-    /* display: block; */
-    /* margin-left: 10%; */
-
+    color: rgb(51, 65, 62);
 }
 
 /* Background Styling */
 .portContents {
-    background-color: rgb(170, 183, 255);
+    background-color: rgb(217, 255, 250);;
     color: black;
 }
 
@@ -451,9 +455,10 @@ footer {
 /* ---------------------------------------------------------------- */
 /* ------------------------ CV ------------------------ */
 .cvBlock{
-    background-color: rgb(157, 169, 234);
+    background-color: rgb(199, 234, 230);
     width: 80%;
     text-align: center;
+    
     padding-top: 1%;
     padding-bottom: 1%;
     margin-left: 10%;
@@ -489,9 +494,11 @@ footer {
     .heading {
         position: absolute;
         overflow: hidden;
+
         margin-top: 0.5%;
         margin-left: 10%;
-        color: rgb(170, 183, 255);
+
+        color: rgb(217, 255, 250);
         background-color: black;
     }
     
@@ -504,7 +511,6 @@ footer {
     .pageHeader {
         text-align: center;
         margin: 0;
-        /* font-size: medium; */
     }
 }
 
@@ -574,8 +580,18 @@ footer {
         display: none;
     }
 
+    /* Footer Styling */
+    footer {
+
+        
+        color: rgb(217, 255, 250);
+
+        background-color: black;
+        position: relative;
+    }
+
     .logo {
-        width: 75px;
+        width: 80px;
         z-index: 1;
     }
     
@@ -614,20 +630,13 @@ footer {
 
     /* Styling of hamMenu Btns */
     .navButMini {
-        color: rgb(170, 183, 255);
+        color: rgb(217, 255, 250);
+
         background-color: black;
         font-size: large;
         border: none;
 
         padding: 2%;
-    }
-
-    /* Hover Effect (Mobile) */
-    .navButMini:hover {
-        background-color: rgb(151, 163, 228);
-        color: black;
-        border-radius: 15%;
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.365), 0 10px 20px 0  rgba(151, 162, 228, 0.662);
     }
 
     /* To hide Menu from Destop view */
@@ -642,11 +651,7 @@ footer {
     /* -------- Global Set-up -------- */
     /* Footer Styling */
     footer {
-        padding: 1%;
-        margin-top: 2%;
-        margin-left: 10%;
-        margin-right: 5%;
-        color: rgb(170, 183, 255);
+        color: rgb(217, 255, 250);
         background-color: black;
         position: relative;
     }
@@ -714,8 +719,8 @@ footer {
 
     /* Footer Styling */
     footer {
-        margin-left: 5%;
-        color: rgb(170, 183, 255);
+        color: rgb(217, 255, 250);
+
         background-color: #000000;
         position: relative;
     }
@@ -771,4 +776,30 @@ footer {
     .gameCol {
         width: 90%;
     }
+
+/* -------- CV Page -------- */
+.cvBlock{
+    background-color: rgb(199, 234, 230);
+    width: 80%;
+    text-align: center;
+    /* padding-top: 1%;
+    padding-bottom: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 1%; */
+}
+
+.cvSection{
+    text-align: left;
+    /* margin-top: 2%;
+    margin-right: 10%; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: auto;
+    list-style-type: decimal;
+}
+
+.cvSectionHeaders{
+    text-align: center;
+}
+
 }
