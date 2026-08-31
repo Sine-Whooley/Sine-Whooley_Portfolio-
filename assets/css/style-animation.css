@@ -1,0 +1,263 @@
+/* Global settings */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(157, 214, 221); /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, rgb(157, 214, 221), rgb(15, 50, 62));
+}
+
+
+
+
+
+
+
+
+
+/* Secion 1 - Alien Abduction  */
+/* Container */
+.aniAbductContainer{
+    background-color: rgb(76, 145, 153);
+    background-image: linear-gradient(to top right, rgb(91, 173, 183), rgb(51, 97, 102));
+    color: rgb(199, 250, 255);
+
+    border-radius: 15px;
+    margin: 2% 10%;
+
+    display: flex;
+    justify-content: center;   /* horizontal */
+    align-items: center;       /* vertical */
+}
+
+/* Alien - container on hover */
+.aniAbductContainer:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.365) , 0 10px 20px 0  rgba(77, 243, 243, 0.452);
+}
+
+/* Alien - div general settings */
+.aniAbductContainer div {
+    padding: 2% 3%;
+    flex: 1;
+}
+
+/* Alien - Title */
+.aniAbductTitle {
+    text-align: center; 
+    margin-left: 5%;
+}
+
+/* Alien - Video */
+.aniAbductContent {
+    margin-left: 5%;
+    border-radius: 15px;
+}
+
+/* Alien - Title - Flex box 1 settings */
+.aniAbductContainer div:first-child {
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Alien - Video - Flex box 2 settings */
+.aniAbductContainer div:last-child {
+    flex: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+/* Secion 2 - Animation Dingle  */
+/* Container */
+.aniAnimationContainer{
+    background-color: rgb(76, 145, 153);
+    background-image: linear-gradient(to top right, rgb(91, 173, 183), rgb(51, 97, 102));
+    color: rgb(199, 250, 255);
+
+    border-radius: 15px;
+    margin: 2% 10%;
+
+    display: flex;
+    justify-content: center;   /* horizontal */
+    align-items: center;       /* vertical */
+}
+
+/* A.D. - container on hover */
+.aniAnimationContainer:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px 0 rgba(160, 255, 255, 0.452), 0 10px 20px 0  rgba(77, 243, 243, 0.452);
+
+}
+
+/* A.D. - div general settings */
+.aniAnimationContainer div {
+    padding: 2% 3%;
+
+    background-color: transparent;
+    flex: 1;
+}
+
+/* A.D. - Title */
+.aniAnimationTitle {
+    text-align: center; 
+    color: rgb(160, 255, 255);
+}
+
+/* A.D - Video */
+.aniAnimationContent {
+    border-radius: 15px;
+}
+
+/* A.D. - Title - Flex box 1 settings */
+.aniAnimationContainer div:first-child {
+    flex: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* A.D. - Video - Flex box 2 settings */
+.aniAnimationContainer div:last-child {
+    flex: 20%;
+}
+
+
+
+
+
+
+
+
+/* Animation - Title Buttons - General Set-up*/
+.aniSectButt {
+    padding: 15%;
+    background-color: rgba(76, 145, 153, 0.625);
+    background-image: linear-gradient(to bottom right, rgb(157, 214, 221), rgb(24, 78, 96));
+
+    color: rgb(5, 21, 26);
+
+    border-radius: 50%;
+    animation-name: sectButton;
+    animation-duration: 15s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sectButton {
+    0%,
+    100% {
+        top: 0;
+    }
+    25% {
+        transform: translateY(40px);
+    }
+    50% {
+        top: 0;
+    }
+    75% {
+        transform: translateY(-40px);
+    }
+}
+
+.aniSectButt a {
+    color: rgb(5, 21, 26);
+    text-decoration: none;
+}
+
+.aniSectButt1 {
+    margin-left: 20%;
+}
+
+.aniSectButt2 {
+    margin-right: 20%;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 850px)
+{
+    /* Alien - Title - Flex box 1 settings */
+    .aniAbductContainer div:first-child {
+        flex: 30%;
+    }
+
+    /* Alien - Video - Flex box 2 settings */
+    .aniAbductContainer div:last-child {
+        flex: 60%;
+    }
+
+    /* A.D. - Title - Flex box 1 settings */
+    .aniAnimationContainer div:first-child {
+        flex: 60%;
+    }
+
+    /* A.D. - Video - Flex box 2 settings */
+    .aniAnimationContainer div:last-child {
+        flex: 30%;
+    }
+
+    /* Animation - Title Buttons - General Set-up*/
+    .aniSectButt {
+        padding: 5%;
+        border: none;
+        border-radius: 15px;
+        font-size: smaller;
+    }
+
+    @keyframes sectButton {
+        0%,
+        100% {
+            top: 0;
+        }
+    }
+
+    .aniSectButt1 {
+        margin-left: 1%;
+    }
+
+    .aniSectButt2 {
+        /* margin-right: 1%; */
+        margin-left: 15%;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 600px)
+{
+    /* Secion 1 - Alien Abduction  */
+    /* Container */
+    .aniAbductContainer{
+        display: block;
+    }
+
+
+
+
+    /* Secion 2 - Animation Dingle  */
+    /* Container */
+    .aniAnimationContainer{
+        display: block;
+    }
+
+
+   
+
+
+
+}

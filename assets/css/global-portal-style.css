@@ -1,0 +1,274 @@
+/* Global settings */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-color: rgb(49, 57, 62); */
+    background-color: rgb(157, 214, 221); /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, rgb(157, 214, 221), rgb(15, 50, 62));
+}
+
+
+a {
+    text-decoration: none;
+    color: none;
+}
+
+
+
+
+
+
+
+/* Container for Header and SVG */ 
+.globalHeaderContainer {
+    background-color: rgb(0, 0, 0);
+    color: rgb(76, 145, 153);
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    padding-top: 2%;
+    padding-bottom: 1%;
+    overflow: hidden;  
+}
+
+
+.globalPortOptSect {
+    background-color: black;
+    color: rgb(76, 145, 153);
+    padding-bottom: 1%;
+}
+
+
+/* Page Heading - Animation */
+.globalTopTitle {
+    text-align: center;
+    color: rgb(5, 21, 26);
+    margin-top: -5%;
+    padding-bottom: 3%;
+}
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------- */
+/* ---------------------- Page Header Set-up ----------------------------- */
+/* Hello & Welcome, Portfolio, CV */
+.headerContainer {
+    color: rgb(76, 145, 153);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: -1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    overflow: hidden;    
+}
+
+
+/* Logo Styling */
+.logo {
+    position: absolute;
+    overflow: hidden;
+    margin-left: 3%;
+    border: none;
+}
+
+
+.myNameHeading {
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 12%;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Bottom - SVG display  */
+.globalBottomSVG svg {    
+    transform: rotate(180deg);
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------- */
+/* ------------------------- Footer Set-up ------------------------------- */
+
+/* Footer Container - Top */
+.globalFootContainer {
+    color: rgb(76, 145, 153);
+    background-color: black;
+    margin: -0.1vh;
+    padding-top: 2%;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;   /* horizontal */
+    align-items: center;       /* vertical */
+}
+
+/* Footer - div Set-up */
+.globalFootContainer div {
+    flex: 1;
+    align-items: center;
+}
+
+/* Footer - Flex box 1 settings */
+.globalFootContainer div:first-child {
+    flex: 50%;
+}
+
+/* Footer - Flex box 2 Set-up */
+.globalFootContainer div:last-child {
+    flex: 50%;
+}
+
+/* Footer - Flex box 2 - Links Set-up */
+.globalFootSect2 a {
+    text-decoration: none;
+    color: rgb(76, 145, 153);
+}
+
+.globalFootSect2 ul {
+    color: rgb(76, 145, 153);
+}
+
+/* Footer Container - Bottom */
+.globalFootBase {
+    color: rgb(76, 145, 153);
+    background-color: black;
+    padding: 2% 5%;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+/* ----------------- Monitor Styling ----------------- */  
+@media only screen and (max-width: 1920px)
+{
+    /* Nav Large Menu Set-Up */
+    .navLarge {
+        display: contents;
+    }
+
+
+    /* Mini Nav Menu Set-Up */
+    .navMini {
+        display: none;
+    }
+}
+
+
+
+
+/* ----------------- Tablet Landscape Mode Styling ----------------- */
+@media only screen and (max-width: 1030px)
+{
+    /* -------------- Navigation Menu Set-Up -------------- */
+    /* Nav Large Menu Set-Up */
+    .navLarge {
+        display: none;
+    }
+
+
+    /* Mini Nav Menu Set-Up */
+    .navMini {
+        display: contents;
+    }
+
+    .logoMini {
+        margin-top: 1%;
+        height: 7vh;
+        width: auto;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/* ----------------- Tablet Portrait Mode Styling ----------------- */
+@media only screen and (max-width: 750px)
+{
+
+    .portfolioButtons {
+        font-size: medium;
+        padding: 1%;
+        margin-left: 3%;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 600px)
+{
+    .logoMini {
+        margin-top: 1%;
+        height: 5vh;
+        width: auto;
+    }
+
+    
+    /* ----------------------------------------------------------------------- */
+    /* ------------------------- Footer Set-up ------------------------------- */
+
+    /* Footer Container - Top */
+    .globalFootContainer {
+       display: block;
+       font-size: medium;
+    }
+
+    /* Footer - div Set-up */
+    .globalFootContainer div {
+        align-items: center;
+        margin-top: 5%;
+    }
+
+}
+
+
+
+/* ----------------- Mobile Styling ----------------- */
+@media only screen and (max-width: 450px)
+{
+    .myNameHeadingMini {
+        display: none;
+    }
+}

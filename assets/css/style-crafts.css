@@ -1,0 +1,86 @@
+/* .cHeaderContainer {
+    margin-top: -5%;
+} */
+
+
+.cContainer {
+    display: flex;
+    justify-content: center;   /* horizontal */
+    align-items: center;       /* vertical */
+
+    margin: 2% 5%;
+    padding: 1% 2%;
+
+    border-radius: 15px;
+    /* background-image: linear-gradient(to bottom right, rgb(91, 173, 183), rgb(51, 97, 102));   */
+}
+
+.cContainer div {
+    flex: 1;
+}
+
+.cImg {
+    width: 40vw;
+    border: 2px solid black;
+    border-radius: 5%;
+}
+
+.cSectTitle {
+    font-size: larger;
+    color: rgb(160, 255, 255);
+
+}
+
+
+.cContainerS1 div:first-child {
+    flex: 50%;
+}
+
+.cContainerS1 div:last-child {
+    flex: 50%;
+}
+
+.cImgS1 {
+    margin-left: 5%;
+}
+
+.cSectTitleS1 {
+    margin-left: 2%;
+    
+}
+
+
+
+
+
+.cContainerS2 div:first-child {
+    flex: 50%;
+}
+
+.cContainerS2 div:last-child {
+    flex: 50%;
+}
+
+.cImgS2 {
+    margin-right: 5%;
+}
+
+.cSectTitleS2 {
+    margin-right: 2%;
+    text-align: right;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .cSectTitle {
+        font-size: medium;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .cSectTitle {
+        font-size: small;
+    }
+}

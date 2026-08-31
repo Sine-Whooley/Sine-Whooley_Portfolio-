@@ -1,0 +1,1036 @@
+/* ---------------------------------------------------------------------- */
+/* ------------------------ Home Global Styling ------------------------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+
+/* Links Styling */
+a {
+    text-decoration: none;
+    color: none;
+}
+
+/* Body of webpage */
+body {
+    background-color: rgb(157, 214, 221); /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, rgb(73, 144, 152), rgb(5, 21, 26));
+}
+
+
+.gradientSection1 {
+    background: linear-gradient(to bottom right, rgb(91, 173, 183), rgb(51, 97, 102));
+}
+
+
+
+
+/* ---------------------------------------------------------------------- */
+/* ------------------------ Splash Screen Set-up ------------------------ */
+.introSplash {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transition: 1.5s;
+    background-color: rgb(0, 0, 0);
+}
+
+.splashMessage{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.splashText {
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+    text-align: center;
+     
+} 
+
+.splashText.active {
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.splashText.fade {
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------ */
+/* ---------------------- Page Header (Name) Set-up ----------------------------- */
+/* Hello & Welcome, Portfolio, CV */
+.headerContainer {
+    color: rgb(76, 145, 153);
+    background-color: rgb(0, 0, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: -1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    overflow: hidden;    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/* ------------------------ Navigation Bar Settings  ------------------------ */
+/* Set-up */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1%;
+    padding: 1%;
+    padding-right: 5%;
+}
+
+
+/* Nav Bar button set-up */
+.navButton {
+    background-color: transparent;
+    font-size: large;
+    border: none;
+    padding: 0.8%;
+    color: rgb(76, 145, 153);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* Setting the link in the buttons on the Nav Bar to black  */
+.navButton a {
+    color: rgb(76, 145, 153);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* Button Hover Effect */
+.navButton:hover {
+    border-radius: 15%;
+    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.365), 0 10px 20px 0  rgba(67, 66, 66, 0.662);
+}
+
+
+/* Nav Bar Menu (Desktop Screen) */
+.menuButtons {
+    display: contents;
+}
+
+/* Logo Styling */
+.logo {
+    position: absolute;
+    overflow: hidden;
+    margin-left: 3%;
+    border: none;
+}
+
+/* Name that appears in the header */
+.myNameHeading {
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 12%;
+}
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------- */
+/* ----------------- Mini Navigation Bar Settings  ----------------- */
+/* Name that appears in the header */
+.myNameHeadingMini {
+    position: absolute;
+    margin-top: 1.5%;
+    margin-left: 12%;
+}
+
+
+/* Logo Styling */
+.logoMini {
+    position: absolute;
+    overflow: hidden;
+    margin-left: 3%;
+    margin-top: 15%;
+    border: none;
+}
+
+
+/* Set-up */
+.navbarMini {
+    display: flex;
+    justify-content: flex-end;
+    /* justify-content: center; */
+    margin-top: 1%;
+    padding: 1%;
+    padding-right: 5%;
+}
+
+
+/* Nav Bar button set-up */
+.navButtonMini {
+    background-color: transparent;
+    font-size: x-large;
+    border: none;
+    padding: 0.8%;
+    color: rgb(76, 145, 153);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* Setting the link in the buttons on the Nav Bar to black  */
+.navButtonMini a {
+    color: rgb(76, 145, 153);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* Button Hover Effect */
+.navButtonMini:hover {
+    border-radius: 15%;
+    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.365), 0 10px 20px 0  rgba(67, 66, 66, 0.662);
+}
+
+
+/* Nav Bar Menu (Desktop Screen) */
+.menuButtonsMini {
+    display: contents;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/* ------------------------ Portfolio Menu Settings  ------------------------ */
+
+/* Portfolio Button Set-up */
+.displayPortMenu {
+    display: none;
+}
+
+
+.portfolioOptionsSect {
+    /* display: flex; */
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.homePortOptSect {
+    background-color: black;
+    padding-bottom: 2%;
+}
+
+
+.portfolioButtons {
+    background-color: transparent;
+    font-size: large;
+    border: none;
+    padding: 0.8%;
+}
+
+
+.portfolioButtons a {
+    text-decoration: none;
+    color: rgb(76, 145, 153);
+
+}
+
+
+.portfolioButtons:hover {
+    border-radius: 15%;
+    box-shadow: 0 3px 5px 0 rgba(255, 255, 255, 0.365), 0 10px 20px 0  rgba(67, 66, 66, 0.662);
+}
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------- */
+/* ------------------------ Text Slide Set-up ------------------------ */
+.homePosSlideContainer {
+    height: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(76, 145, 153);
+    background-image: linear-gradient(to bottom right, rgb(91, 173, 183), rgb(51, 97, 102));
+}
+
+
+.homePosSlide {
+    height: 30px;
+    line-height: 30px;
+    font-size: 35px;
+    text-transform: uppercase;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+.homePosSlide span {
+    position: relative;
+    color: rgb(5, 21, 26);
+    animation-name: animationTitles;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    
+    /* Below is the shorthand version of the animation settigns above - including full list until I learn more about animations */
+    /* animation: animationTitles 10s ease infinite; */
+}
+
+
+@keyframes animationTitles {
+    0%,
+    100% {
+        top: 0;
+    }
+    12.5% {
+        top: -30px;
+    }
+    25% {
+        top: -60px;
+    }
+    37.5% {
+        top: -90px;
+    }
+    50% {
+        top: -120px;
+    }
+    62.5% {
+        top: -90px;
+    }
+    75% {
+        top: -60px;
+    }
+    87.5% {
+        top: -30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------- */
+/* ------------------------ Image Slide Show Set-up ------------------------ */
+.homeSlideShowContainer {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+}
+
+
+.homeSlideImg {
+    height: 100%;
+    width: auto;   
+}
+
+
+.homeSlideImg img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+
+.homeImage {
+    display: none;
+    height: 100%;
+    width: auto;
+}
+
+
+/* Slide Show Buttons Styling */
+.slideButtons {
+    cursor: pointer;
+    position: absolute;
+    top: 30vh;  
+    border-radius: 15px;
+    padding: 16px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+
+    
+    /* position: absolute;
+    top: 50%;
+    transform: translateY(-50%); */
+}
+
+
+.slidePrevious {
+    left: 5%;
+}
+
+
+/* Previous Button Hover Effect */
+.slidePrevious:hover {
+    box-shadow: 0 3px 5px 0 rgba(127, 180, 186, 0.541), 0 10px 20px 0  rgba(154, 201, 207, 0.541);
+}
+
+
+/* Next Button */
+.slideNext {
+    right: 5%;
+}
+
+
+/* Next Button Hover Effect */
+.slideNext:hover {
+    box-shadow: 0 3px 5px 0 rgba(127, 180, 186, 0.541), 0 10px 20px 0  rgba(154, 201, 207, 0.541);
+}
+
+/* Fading Animation */
+.fadeEffect {
+    animation-name: fadeEffect;
+    animation-duration: 3s;
+}
+
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0.1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------- */
+/* ------------------------ About Me Section Set-up ------------------------ */
+.homeAboutContainer {
+    background-color: rgb(76, 145, 153);
+    color: rgb(199, 250, 255);
+    padding: 4%;
+    margin: 2% 5%;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.aboutHeading hr {
+    border: none;
+    width: 60%;
+    height: 2px;
+    background-color: rgb(199, 250, 255);
+    margin-left: 20%;
+}
+
+
+.aboutRow{
+    display: flex;
+}
+
+
+.aboutCol{
+    flex: 1;
+}
+
+
+.aboutCol1 {
+    flex: 60%;
+    margin-right: 5%;
+}
+
+
+.aboutCol2 {
+    flex: 30%;
+    margin-left: 5%;
+}
+
+
+.homeAboutParagraph {
+    font-size: large;
+}
+
+
+.aboutSelfie{
+    border-radius: 50%;
+    border-style: solid;
+    animation-name: aboutPhoto;
+    animation-duration: 15s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    /* filter: blur(5px); */
+}
+
+
+@keyframes aboutPhoto {
+    0%,
+    100% {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(36deg);
+    }
+    50% {
+        transform: rotate(0);
+    }
+    75% {
+        transform: rotate(-36deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------------------- */
+/* ------------------ Portfolio Button - Links - Section Set-up  ------------------- */
+.homeLinksContainer {
+    overflow: hidden;
+    padding: 2%;
+    margin: 2% 5%;
+    border-radius: 15px;
+    background-color: rgb(76, 145, 153);
+    color: rgb(199, 250, 255);    
+}
+
+
+.homeLinksContainer hr {
+    border: none;
+    width: 60%;
+    height: 2px;
+    background-color: rgb(199, 250, 255);
+    margin-left: 20%;
+}
+
+
+.homeLinksHeader {
+    text-align: center;
+}
+
+
+.homeLinkButtonContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+
+.homeLinkButton {
+    border: 1px solid black;
+    padding: 5px;
+    font-size: x-large;
+    text-align: center;
+    border-radius: 15px;
+    height: 10vh;
+    margin: 10%;
+    background-color: rgb(76, 145, 153);
+    background-image: linear-gradient(to bottom right, rgb(73, 136, 145), rgb(43, 80, 84));
+    color: rgb(199, 250, 255);
+    box-shadow: 0 3px 5px 0 rgba(69, 127, 133, 0.541), 0 10px 20px 0  rgba(42, 82, 87, 0.541);
+}
+
+
+.homeLinkButton a {
+    color: rgb(199, 250, 255);
+}
+
+
+.homeLinkButton:hover {
+    transform: scale(1.1);
+    box-shadow: 0 3px 5px 0 rgba(127, 180, 186, 0.541), 0 10px 20px 0  rgba(154, 201, 207, 0.541);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------------------- */
+/* -------------------------- Web Form - Section Set-up  --------------------------- */
+.home-forms-container {
+    overflow: hidden;
+    padding: 2%;
+    margin: 2% 5%;
+    border-radius: 15px;
+    background-color: rgb(76, 145, 153);
+    color: rgb(199, 250, 255); 
+}
+
+
+.home-form-style {
+    background-image: linear-gradient(to top right, rgb(73, 136, 145), rgb(43, 80, 84));
+    padding: 5%;
+    margin: 1% 5%;
+    border-radius: 20px;
+    /* border: 1px solid black; */
+}
+
+.home-form-style:hover {
+    transform: scale(1.01);
+    box-shadow: 0 3px 5px 0 rgba(127, 180, 186, 0.541), 0 10px 20px 0  rgba(154, 201, 207, 0.541);
+}
+
+
+.contact-fields{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.home-form-title {
+    text-align: center;
+}
+
+
+.home-form-title hr {
+    border: none;
+    width: 60%;
+    height: 2px;
+    background-color: rgb(199, 250, 255);
+    margin-left: 20%;
+}
+
+
+.home-form-mini-title {
+    margin-left: 10%;
+    font-size: large;
+    padding: 1% 1% ;
+}
+
+
+.contact-details {
+    width: 80%;
+    height: 10vh;
+    border: none;
+    outline: none;
+    padding-left: 5%;
+    font-weight: 500;
+    border-radius: 15px;
+    margin-left: 10%;
+}
+
+
+.contact-details:focus {
+    border: 3px solid rgb(0, 0, 0);
+}
+
+
+.contact-details::placeholder {
+    color: rgb(108, 121, 122);
+}
+
+
+.contact-message {
+    height: 20vh;
+    padding-top: 2%;
+}
+
+
+.home-submit-button {
+    width: 80%;
+    height: 5vh;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    margin-left: 10%;
+    background-color: rgb(51, 97, 102);
+    color: rgb(199, 250, 255);
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.home-submit-button:hover {
+    box-shadow: 0 3px 5px 0 rgba(127, 180, 186, 0.541), 0 10px 20px 0  rgba(154, 201, 207, 0.541);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------- Monitor Styling ----------------- */  
+@media only screen and (max-width: 1920px)
+{
+    /* Nav Large Menu Set-Up */
+    .navLarge {
+        display: contents;
+    }
+
+
+    /* Mini Nav Menu Set-Up */
+    .navMini {
+        display: none;
+    }
+}
+
+
+
+
+/* ----------------- Tablet Landscape Mode Styling ----------------- */
+@media only screen and (max-width: 1030px)
+{
+    /* -------------- Navigation Menu Set-Up -------------- */
+    /* Nav Large Menu Set-Up */
+    .navLarge {
+        display: none;
+    }
+
+
+    /* Mini Nav Menu Set-Up */
+    .navMini {
+        display: contents;
+    }
+
+    .logoMini {
+        margin-top: 1%;
+        height: 7vh;
+        width: auto;
+    }
+
+
+    /* -------------- Image Slide-Show Set-Up -------------- */
+    /* Home Slide Show Container Set-Up */
+    .homeSlideShowContainer {
+        height: 70vh;
+        margin-bottom: 3%;
+    }
+
+    /* Image Slide Show Buttons - General Set-Up */
+    .slideButtons {
+        top: 25vh;  
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 15px;
+    }
+    
+    /* Previous Button */
+    .slidePrevious {
+        left: 2%;
+        background-color: rgb(104, 191, 201);
+    }
+
+
+    /* Previous Button Hover Effect */
+    .slidePrevious:hover {
+        box-shadow: 0 2px 4px 0 rgba(127, 180, 186, 0.541), 0 10px 20px 0  rgba(154, 201, 207, 0.541);
+    }
+
+
+    /* Next Button */
+    .slideNext {
+        right: 2%;
+        background-color: rgb(104, 191, 201);
+    }
+
+
+    /* Next Button Hover Effect */
+    .slideNext:hover {
+        box-shadow: 0 2px 4px 0 rgba(127, 180, 186, 0.541), 0 10px 20px 0  rgba(154, 201, 207, 0.541);
+    }
+
+    
+    
+    /* -------------- About Me Set-Up -------------- */
+    .homeAboutContainer {
+        padding: 3%;
+        margin: 2% 3%;
+        border-radius: 15px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .aboutHeading hr {
+        border: none;
+        height: 2px;
+        background-color: rgb(199, 250, 255);
+        margin-left: 20%;
+    }
+
+
+    .aboutRow{
+        display: flex;
+    }
+
+
+    .aboutCol{
+        flex: 1;
+    }
+
+
+    .aboutCol1 {
+        flex: 80%;
+        margin-right: 5%;
+    }
+
+
+    .aboutCol2 {
+        flex: 10%;
+        margin-left: 5%;
+    }
+
+
+    .homeAboutParagraph {
+        font-size: large;
+    }
+
+
+    .aboutSelfie{
+        border-radius: 50%;
+        width: 40vw;
+    }
+
+
+    /* Portfolio Link Buttons */
+    .homeLinksContainer {
+        padding: 3%;
+        margin: 2% 3%;
+    }
+
+
+    .home-forms-container {
+        padding: 3%;
+        margin: 2% 3%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/* ----------------- Tablet Portrait Mode Styling ----------------- */
+@media only screen and (max-width: 750px)
+{
+    .aboutSelfie{
+        border-radius: 50%;
+        width: 30vw;
+
+    }
+
+    .homeLinkButton {
+        padding: 5px;
+        font-size: large;
+        height: 10vh;
+        margin: 10%;
+    }
+
+
+    /* -------------- Image Slide-Show Set-Up -------------- */
+    /* Image Slide Show Buttons - General Set-Up */
+    .slideButtons {
+        top: 20vh;  
+        border-radius: 10px;
+        padding: 6px;
+        font-size: 15px;
+    }
+
+
+    .homeSlideShowContainer {
+        height: 70vh;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 700px)
+{
+    /* -------------- Image Slide-Show Set-Up -------------- */
+    /* Image Slide Show Buttons - General Set-Up */    
+    .homeSlideShowContainer {
+        height: 60vh;
+    }
+}
+
+
+
+@media only screen and (max-width: 600px)
+{
+    /* ------------------------------------------------------------------------- */
+    /* ------------------------ About Me Section Set-up ------------------------ */
+    .homeAboutContainer {
+        margin-bottom: 5%;
+    }
+
+
+    .aboutHeading hr {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+
+    .aboutRow{
+        display: block;
+        padding-left: 5%;
+    }
+
+
+    .homeAboutParagraph {
+        font-size: medium;
+    }
+
+
+    .aboutSelfie{
+        margin-top: 2%;
+        border-radius: 50%;
+ 
+    }
+
+
+    .homeLinksContainer hr {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+        
+    /* ------------------------------------------------------------------------- */
+    /* ------------------------ Image Slide Show Set-up ------------------------ */
+    .homeSlideShowContainer {
+        height: 50vh;
+    }
+
+
+
+}
+
+
+
+@media only screen and (max-width: 550px)
+{
+    /* -------------- Image Slide-Show Set-Up -------------- */
+    /* Image Slide Show Buttons - General Set-Up */
+    .homeSlideShowContainer {
+        height: 45vh;
+    }
+
+}
+
+
+@media only screen and (max-width: 500px)
+{
+    .homeLinkButton {
+        padding: 5px;
+        font-size: medium;
+        border-radius: 15px;
+        height: 10vh;
+        margin: 10%;
+    }
+
+    /* -------------- Image Slide-Show Set-Up -------------- */
+    /* Image Slide Show Buttons - General Set-Up */
+    .slideButtons {
+        top: 20vh;  
+        font-size: 12px;
+    }
+
+    
+    .homeSlideShowContainer {
+        height: 40vh;
+    }
+
+}
+
+
+
+
+
+
+

@@ -6,125 +6,297 @@
     <meta name="author" content="Sine Whooley">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Síne Whooley Portfolio</title>
-    <link href="assets/css/stylesheet.css" rel="stylesheet" type="text/css"> <!-- To include the CSS file -->
+    
+    
+    <link href="assets/css/style-home.css" rel="stylesheet" type="text/css"> <!-- To include the Home CSS file -->
+    <link rel="stylesheet" href="assets/css/global-portal-style.css"> <!-- To include the Global CSS File  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- fa fa-xxxx symbol add in's -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"> <!-- For the animation button icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- For the Web Design button Globe Icon -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> For the animation button icon -->
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
-        <section class="headerContainer">
-            
-            <a href="index.html"><img class="logo" src="assets/img/LOGO_White-Green.png" alt="logoImg" width="8%"></a>
 
-            <div class="heading myName">
-                <h1>SÍNE WHOOLEY</h1>
+    <div class="introSplash">
+        <h1 class="splashMessage">
+            <span class="splashText splashP1">Hello</span><br>
+            <span class="splashText splashP2">&</span><br>
+            <span class="splashText splashP3">Welcome</span>
+        </h1>
+    </div>
+
+
+    <!-- Header -->
+    <section class="headerContainer">
+        <div class="navLarge">
+            <a href="index.html"><img class="logo" src="assets/img/LOGO_Blue-Blue.png" logoImg" width="7%"></a>
+
+            <div class="myNameHeading">
+                <h1>Síne Whooley</h1>
             </div>
-            
-            <nav class="navbar">
+                
+                
+            <nav class="navbar" color="black">
                 <!-- Navigation Bar -->
                 <div class="menuButtons">
-                    <button class="navButton"><a href="index.html">Home</a></button>
-                    <button class="navButton"><a href="portfolio.html">Portfolio</a></button>
-                    <button class="navButton"><a href="cv.html">CV</a></button>
+                    <button class="navButton"><a href="index.html"><i class="fa fa-home"></i> Home </a></button>
+                        
+                    <button class="navButton" onclick="displayPortDropDown()"><i class="fa fa-briefcase"></i> Portfolio</button>
+                        
+                    <button class="navButton"><a href="cv.html"><i class="fa fa-file"></i>  CV </a></button>
                 </div>
-            
-                <!-- Hamburger Menu Button (Mobile Display) -->
-                <div class="displayHamMenuBut" id="displayHamMenuBut">
-                    <button class="navButton">&#9776;</button>
-                </div>
-            </nav>
-            
-            <nav class="navbarMini">
-                <!-- Hamburger Menu Drop-Down -->
-                <div class="displayDropDown" id="displayDropDown">
-                        <button class="navButMini dropDownNav"><a href="index.html">Home</a></button>
-                        <button class="navButMini dropDownNav"><a href="portfolio.html">Portfolio</a></button>
-                        <button class="navButMini dropDownNav"><a href="cv.html">CV</a></button>
-                </div>
-            </nav>
-        </section>
-    </header> 
-
-    <!-- Home Section -->
-    <div class="homeBackGStyle">
-        <div class="homeContainer">
-            <div class="homeContainerTopDivide">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 180" preserveAspectRatio="none">
-                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-                </svg>
-            </div>
-
-            <h1 class="pageHeader">Hello & Welcome!</h1>
-            <hr color="black" width="90%"> 
-
-            <div class="aboutRow">
-                <div class="aboutCol">
-                    <!-- Home Photo Slide Show -->
-                    <div class="homeSlideImg">
-                        <div class="homeImage fadeEffect">
-                            <img src="assets/img/paintings/Tunnel.jpg" alt="" width="80%">
-                        </div>
-                        <div class="homeImage fadeEffect">
-                            <img src="assets/img/digital-art/Purple.png" alt="" width="80%">
-                        </div>
-                        <div class="homeImage fadeEffect">
-                            <img src="assets/img/digital-art/Pop-Art.png" alt="" width="80%">
-                        </div>
-                        <div class="homeImage fadeEffect">
-                            <img src="assets/img/paintings/Turtle.jpg" alt="" width="80%">
-                        </div>
-                        <div class="homeImage fadeEffect">
-                            <img src="assets/img/paintings/Face A 5x5 Plain.jpg" alt="" width="80%">
-                        </div>
-                        <div class="homeImage fadeEffect">
-                            <img src="assets/img/paintings/Bridge.jpg" alt="" width="80%">
-                        </div>
-                    </div>
-
-                    <!-- Left & Right Arrows -->
-                    <a class="slideButtons slidePrevious" onclick="nextSlide(-1)">&#10094;</a>
-                    <a class="slideButtons slideNext" onclick="nextSlide(1)">&#10095;</a>
-                </div>
-
-                <div class="aboutCol">
-                    <div class="aboutContainer">
-                        <p class="aboutParagraph">
-                            Hi, my name is Síne. I am a Cork and Carlow-based creative professional and a recent graduate of South East Technological University (SETU), Carlow  with a degree in 'Computing in Interactive Digital Art and Design'.
-                        </p>
-                        <p class="aboutParagraph">
-                            My degree sits at the intersection of technology and aesthetics, specializing in web development, animation, and graphic design. I began my academic journey at 23 to diversify my technical skillset and hone my artistic intuition.
-                        </p>
+            </nav> 
+        </div>
         
-                        <p class="aboutParagraph">
-                            I am now seeking to join a dynamic team where I can apply my unique background to create visually compelling, user-centric digital solutions.
-                            Let me know if you have any questions, by sending an email or catching me on LinkedIn! 
-                        </p>
-                    </div>
-                </div>
-            </div>
 
-            <div class="homeContainerBottomDivide">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-                </svg>
+
+        <div class="navMini">
+            <a href="index.html"><img class="logoMini" src="assets/img/LOGO_Blue-Blue.png" logoImg" width="7%"></a>
+
+            <div class="myNameHeadingMini">
+                <h1> SW </h1>
             </div>
+            
+            <nav class="navbarMini" color="black">
+                <!-- Navigation Bar -->
+                <div class="menuButtonsMini">
+                    <button class="navButtonMini"><a href="index.html"><i class="fa fa-home"></i></a></button>
+                        
+                    <button class="navButtonMini" onclick="displayPortDropDown()"><i class="fa fa-briefcase"></i></button>
+                        
+                    <button class="navButtonMini"><a href="cv.html"><i class="fa fa-file"></i></a></button>
+                </div>
+            </nav>            
+        </div>
+    </section>
+
+    <!-- Portfolio Buttons - Drop-Down Menu -->
+    <div class="displayPortMenu" id="displayPortMenu">
+        <nav class="portfolioOptionsSect globalPortOptSect">
+            <button class="portfolioButtons"><a href="web-design.html"> Web Design </a></button>
+            <button class="portfolioButtons"><a href="animation-portal.html"> Animation </a></button>
+            <button class="portfolioButtons"><a href="games-portal.html"> Games </a></button>  
+            <button class="portfolioButtons"><a href="digital-design.html"> Digital Designs </a></button>
+            <button class="portfolioButtons"><a href="paintings-prints.html"> Paintings </a></button>
+            <button class="portfolioButtons"><a href="crafts-portal.html"> Crafts </a></button>
+        </nav>
+    </div>
+
+    
+    
+    
+
+
+
+
+
+
+    <!-- Verical Slide Show of what I can do  -->
+    <div class="homePosSlideContainer">
+        <h1>
+            <div class="homePosSlide">
+                <span>
+                    Front-End Devolper <br />
+                    Graphic Designer <br />
+                    Product Designer <br />
+                    Crafter<br />
+                    Artist <br /> 
+                </span>
+            </div>
+        </h1>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- Image Slide Show of the pieces I have created -->
+    <section class="homeSlideShowContainer">              
+        <div class="homeSlideImg homeSlideSection homeSlideSect1">
+            
+            <div class="homeImage fadeEffect" id="homeImg1">
+                <img src="assets/img/digital-art/Purple.png" alt="">
+            </div>
+            <div class="homeImage fadeEffect" id="homeImg2">
+                <img src="assets/img/digital-art/Pop-Art.png" alt="">
+            </div>
+            <div class="homeImage fadeEffect" id="homeImg3">
+                <img src="assets/img/paintings/Turtle.jpg" alt="">
+            </div>
+            <div class="homeImage fadeEffect" id="homeImg4">
+                <img src="assets/img/paintings/Face A 5x5 Plain.jpg" alt="">
+            </div>
+            <div class="homeImage fadeEffect" id="homeImg5">
+                <img src="assets/img/paintings/Bridge.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="homeSlideSection homeSlideSect2">
+            <!-- Left & Right Arrows -->
+            <a class="slideButtons slidePrevious" onclick="nextSlide(-1)">&#10094;</a>
+            <a class="slideButtons slideNext" onclick="nextSlide(1)">&#10095;</a>
+        </div>
+    </section>
+    
+
+
+
+
+
+
+
+
+
+    <!-- About Me Section -->
+    <div class="aboutRow homeAboutContainer gradientSection1">
+        <div class="aboutCol aboutCol1">
+            <div class="aboutHeading">
+                <h1 class="homeAboutHeader"><i class="fa fa-user"> </i>  About Me </h1>
+                <hr color="black"><br>
+            </div>
+            
+            <p class="homeAboutParagraph">
+                Hi, my name is Síne. I am an Ireland based creative professional and a recent graduate of South East Technological University (SETU), Carlow  with a degree in 'Computing in Interactive Digital Art and Design'.
+            </p>
+            <br>
+            <p class="homeAboutParagraph">
+                My degree sits at the centre of technology and aesthetics, specializing in web development, animation, and graphic design and a bit of Game Design. I began my academic journey there at 23, diversifying my technical skillset and honing my artistic intuition. Since then I've spent my time creating my online portfolio and every item within it. 
+            </p>
+            <br>
+            <p class="homeAboutParagraph">
+                You can find links to all the projects I have completed below in each section, and if you are looking for more resume style details, they are available in the CV tab above! 
+
+                Let me know if you have any questions, by sending an email or catching me on LinkedIn!
+            </p>
+        </div>
+
+        <div class="aboutCol aboutCol2">
+            <img class="aboutSelfie" src="assets/img/about-me/Selfie.jpg" alt="">
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footerContainer">
-            <div class="footerCol">
-                <h3>For more information:</h3>
-                <p><a href="https://www.linkedin.com/in/sine-whooley/">LinkedIn</a></p>
-            </div>
-            <div class="footerCol">
-                <h3>Get in contact:</h3>
-                <p><strong>Email:</strong> sinewhooley@gmail.com</p>
-            </div>
+
+
+
+
+
+
+
+
+
+    <!-- Button Links to the Portfolio -->
+    <div class="homeLinksContainer gradientSection1">
+        <h1 class="homeLinksHeader"> Press a button to find more! </h1>
+        <hr>
+        <br>
+        <div class="homeLinkButtonContainer">
+            <button class="homeLinkButton"><a href="web-design.html"><i class="fa fa-globe"></i> Web Design</a></button>
+            <button class="homeLinkButton"><a href="animation-portal.html"><i class='fas fa-file-video'></i> Animation </a></button>
+            <button class="homeLinkButton"><a href="games-portal.html"><i class='fas fa-gamepad'></i> Games </a></button> 
+            <button class="homeLinkButton"><a href="digital-design.html"><i class='far fa-object-ungroup'></i> Digital Designs</a></button>
+            <button class="homeLinkButton"><a href="paintings-prints.html"><i class="fa fa-paint-brush"></i> Paintings </a></button>
+            <button class="homeLinkButton"><a href="crafts-portal.html"><i class='fas fa-ruler-combined'></i> Crafts</a></button>
         </div>
-    </footer>
+    </div>
+
+
+
+
+
+
+    <!-- Contact Me Form -->
+    <div class="home-forms-container gradientSection1">
+        <div class="home-form-style">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-fields">
+                <div class="home-form-title">
+                    <h1> Get in touch! </h1>
+                    <hr>
+                </div>
+                <br>
+                <input type="hidden" name="access_key" value="e2cf0542-0060-4a79-917d-43c70f8cc897">
+                <!-- To connect to my email with the access key above -->
+                 
+                <label for="department" class="home-form-mini-title">Related to:</label>
+                <select id="department" name="department" placeholder="Select..." class="contact-details" required>
+                    <!-- <option value="select"> Select... </option> -->
+                    <option value="other"> Other </option>
+                    <option value="web-design"> Web Design </option>
+                    <option value="animation"> Animation </option>
+                    <option value="games"> Games </option>
+                    <option value="graphic-design"> Graphic Design </option>
+                    <option value="paintings-prints"> Painting & Prints </option>
+                    <option value="crafts"> Crafts </option>
+                    
+                </select>
+
+
+                <label for="name" class="home-form-mini-title">Your Name</label>
+                <input type="text" name="name" placeholder="Your Name.." class="contact-details" required>
+
+                <label for="email" class="home-form-mini-title">Last Email</label>
+                <input type="text" name="email" placeholder="Your Email.." class="contact-details" required>
+
+                <label for="message" class="home-form-mini-title">Message</label>
+                <!-- <input type="text" name="message" placeholder="Your Message..." class="contact-details"> -->
+                <textarea name="message" placeholder="Your message..." class="contact-details contact-message" required></textarea>
+
+                <br>
+
+                <!-- <input type="submit" value="Submit"> -->
+                <button type="submit" class="home-submit-button"> Submit </button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+     <div class="globalFootContainer">
+        <div class="globalFootSect1">
+            <h2> Sine Whooley </h2>
+            <!-- <hr> -->
+            <br>
+            <h3> Artist & UX/UI Design & Developer </h3>
+            <h4> Always happy to help!</h4>
+        </div>
+        
+        <div class="globalFootSect2">
+            <h2> Get in touch!</h2>
+            <br>
+            <ul>
+                <a href=""><i class="fa fa-envelope"></i>: sinesartsythings@gmail.com </a>
+                <br>
+                <a href="https://www.linkedin.com/in/sine-whooley/"><i class="fa fa-linkedin"></i>: LinkedIn </a>
+                <br>
+                <a href="https://www.instagram.com/sines_artsy_things/?hl=en"><i class="fa fa-instagram"></i>: Instagram </a>
+            </ul>
+        </div>
+    </div> 
+
+
+    <!-- Footer Base - Copyright details -->
+    <div class="globalFootBase"> 
+        <br>
+        <hr>
+        <br>
+        <p><i class="fa fa-copyright"></i> 2026. Sine Whooley | All rights reserved | Designed and built with passion for Art and Technology. </p>
+    </div>
+
 
     <!-- To include the JavaScript file -->
     <script src="assets/js/script.js"></script>

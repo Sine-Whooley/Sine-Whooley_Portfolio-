@@ -1,0 +1,145 @@
+/* CV div container for all sections  */
+.cvContainer {
+    margin: 2%;
+}
+
+
+/* CV individual sections / blocks */
+.cvBlock{
+    background-color: rgb(76, 145, 153);
+    background-image: linear-gradient(to bottom right, rgb(91, 173, 183), rgb(51, 97, 102));
+    color: rgb(199, 250, 255);
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    border-radius: 15px;
+    width: 80%;
+    text-align: center;
+    
+    padding-top: 1%;
+    padding-bottom: 2%;
+    margin-left: 10%;
+    margin-bottom: 1%;
+}
+
+
+/* CV Section within the Block */
+.cvSection{
+    text-align: left;
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    font-size: auto;
+    list-style-type: decimal;
+}
+
+
+/* CV Section Header */
+.cvSectionHeaders{
+    text-align: center;
+    font-size: x-large;
+    margin-bottom: 1%;
+}
+
+/* CV Header Horizontal Line */
+.cvSectionHeaders hr {
+    width: 80%;
+    height: 3px;
+    margin-left: 10%;
+    color: rgb(18, 97, 104);
+
+}
+
+/* Bullet points within the section */
+.secondSect{
+    margin-left: 4%;
+}
+
+
+
+
+.cvDownloadButton {
+    /* justify-content: center; */
+    /* text-align: center; */
+    margin-left: 45%;
+    /* align-items: center; */
+    padding: 3%;
+    /* margin-left: 35%; */
+
+    border-radius: 15px;
+
+    background-color: rgb(76, 145, 153);
+    background-image: linear-gradient(to bottom right, rgb(91, 173, 183), rgb(51, 97, 102));
+    color: rgb(199, 250, 255);
+
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+
+.cvDownloadButton a {
+    text-decoration: none;
+    color: rgb(199, 250, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: x-large;
+} 
+
+
+
+
+
+/* ----------------- Tablet Landscape Mode Styling ----------------- */
+@media only screen and (max-width: 900px)
+{
+    .cvDownloadButton {
+        margin-left: 40%;
+        padding: 3%;
+    }
+
+
+}
+
+
+/* ----------------- Tablet Portrait Mode Styling ----------------- */
+@media only screen and (max-width: 750px)
+{
+    .cvDownloadButton {
+        margin-left: 40%;
+        padding: 3%;
+
+    }
+
+    .cvDownloadButton a {
+        font-size: large;
+    } 
+    
+    .myNameHeadingMini {
+        margin-left: 15%;
+    }
+
+    /* CV Section Header */
+    .cvSectionHeaders{
+        font-size: large;
+    }
+}
+
+
+/* ----------------- Mobile Styling ----------------- */
+@media only screen and (max-width: 550px)
+{
+    .cvDownloadButton {
+        margin-left: 40%;
+        padding: 3%;
+    }
+
+    .cvDownloadButton a {
+        font-size: large;
+    }  
+
+    .logoMini {
+        margin-top: 1%;
+        height: 5vh;
+        width: auto;
+    }
+}
+

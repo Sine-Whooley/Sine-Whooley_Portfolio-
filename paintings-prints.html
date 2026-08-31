@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sine Whooley">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Síne Whooley Portfolio</title>
+
+    <link href="assets/css/style-home.css" rel="stylesheet" type="text/css"> <!-- To include the Home CSS file -->
+    <link href="assets/css/global-portal-style.css" rel="stylesheet" type="text/css"> <!-- To include the Global CSS File  -->
+    <link href="assets/css/style-paintings.css" rel="paintings & prints stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- fa fa-envelope symbol add in's -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <!------------------------------------------------------------------------------------>
+    <!-- Header -->
+    <section class="globalHeaderContainer">
+<div class="navLarge">
+            <a href="index.html"><img class="logo" src="assets/img/LOGO_Blue-Blue.png" logoImg" width="7%"></a>
+
+            <div class="myNameHeading">
+                <h1>SW Paintings</h1>
+            </div>
+                
+                
+            <nav class="navbar" color="black">
+                <!-- Navigation Bar -->
+                <div class="menuButtons">
+                    <button class="navButton"><a href="index.html"><i class="fa fa-home"></i> Home </a></button>
+                        
+                    <button class="navButton" onclick="displayPortDropDown()"><i class="fa fa-briefcase"></i> Portfolio</button>
+                        
+                    <button class="navButton"><a href="cv.html"><i class="fa fa-file"></i>  CV </a></button>
+                </div>
+            </nav> 
+        </div>
+        
+
+
+        <div class="navMini">
+            <a href="index.html"><img class="logoMini" src="assets/img/LOGO_Blue-Blue.png" logoImg" width="7%"></a>
+
+            <div class="myNameHeadingMini">
+                <h1> SW </h1>
+            </div>
+            
+            <nav class="navbarMini" color="black">
+                <!-- Navigation Bar -->
+                <div class="menuButtonsMini">
+                    <button class="navButtonMini"><a href="index.html"><i class="fa fa-home"></i></a></button>
+                        
+                    <button class="navButtonMini" onclick="displayPortDropDown()"><i class="fa fa-briefcase"></i></button>
+                        
+                    <button class="navButtonMini"><a href="cv.html"><i class="fa fa-file"></i></a></button>
+                </div>
+            </nav>            
+        </div>
+    </section>
+
+    
+    <div class="displayPortMenu" id="displayPortMenu">
+        <nav class="portfolioOptionsSect globalPortOptSect">
+            <button class="portfolioButtons"><a href="web-design.html"> Web Design </a></button>
+            <button class="portfolioButtons"><a href="animation-portal.html"> Animation </a></button>
+            <button class="portfolioButtons"><a href="games-portal.html"> Games </a></button>  
+            <button class="portfolioButtons"><a href="digital-design.html"> Digital Designs </a></button>
+            <button class="portfolioButtons"><a href="paintings-prints.html"> Paintings </a></button>
+            <button class="portfolioButtons"><a href="crafts-portal.html"> Crafts </a></button>
+        </nav>
+    </div>
+
+
+
+    <!-- SVG - Top -->
+    <div>
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" >
+            </path>
+        </svg>  
+
+        <!-- Section Heading 1 - Paintings & Prints -->
+        <h1 class="globalTopTitle">- Paintings -</h1>
+    </div>
+    
+
+
+    <!-- Image 1 -->
+    <div class="ppContainer ppContainerS1">
+        <div>
+            <img class="ppImg ppImgS1" src="assets/img/paintings/Turtle.jpg" alt="Turtle">
+        </div>
+        
+        <div class="ppSectTitle ppSectTitleS1">
+            <h2>Turt</h2>
+
+            <p> Acrylic on Canvas </p>
+        </div>
+    </div>
+
+    <!-- Image 2 -->
+    <div class="ppContainer ppContainerS2">
+        <div class="ppSectTitle ppSectTitleS2">
+            <h2>Oink Oink</h2>
+
+            <p> Acrylic on Canvas </p>
+        </div>
+        
+        <div>
+            <img class="ppImg ppImgS2" src="assets/img/paintings/Pig-Reading.jpg" alt="Oink">
+        </div>
+    </div>
+
+    <!-- Image 3 -->
+    <div class="ppContainer ppContainerS1">
+        <div>
+            <img class="ppImg ppImgS1" src="assets/img/paintings/Flowers-Blue.jpg" alt="Blue Flowers">
+        </div>
+        
+        <div class="ppSectTitle ppSectTitleS1">
+            <h2>Bluey</h2>
+
+            <p> Acrylic on Canvas </p>
+        </div>
+    </div>
+
+    <!-- Image 4 -->
+    <div class="ppContainer ppContainerS2">
+        <div class="ppSectTitle ppSectTitleS2">
+            <h2>Bob</h2>
+
+            <p> Acrylic on Canvas </p>
+        </div>
+        
+        <div>
+            <img class="ppImg ppImgS2" src="assets/img/paintings/Bridge.jpg" alt="Bridge">
+        </div>
+    </div>
+
+    <!-- Image 5 -->
+    <div class="ppContainer ppContainerS1">
+        <div>
+            <img class="ppImg ppImgS1" src="assets/img/paintings/Dragon.jpg" alt="Dragon">
+        </div>
+        
+        <div class="ppSectTitle ppSectTitleS1">
+            <h2>Draggos</h2>
+
+            <p> Acrylic on Canvas </p>
+        </div>
+    </div>
+
+    <!-- Image 6 -->
+    <div class="ppContainer ppContainerS2">
+        <div class="ppSectTitle ppSectTitleS2">
+            <h2>The Distance</h2>
+
+            <p> Acrylic on Canvas </p>
+        </div>
+        
+        <div>
+            <img class="ppImg ppImgS2" src="assets/img/paintings/Face A 5x5 Plain.jpg" alt="Self">
+        </div>
+    </div>
+
+    <!-- Image 7 -->
+    <!-- <div class="ppContainer ppContainerS1">
+        <div>
+            <img class="ppImg ppImgS1" src="assets/img/paintings/Flowers-Green.jpg alt="Green Flowers">
+        </div>
+        
+        <div class="ppSectTitle ppSectTitleS1">
+            <h2>Green Flowers</h2>
+
+            <p> Acrylic on Canvas </p>
+        </div>
+    </div> -->
+
+    <!-- Image 8 -->
+    <div class="ppContainer ppContainerS1">
+        <div>
+            <img class="ppImg ppImgS1" src="assets/img/paintings/Owl.jpg" alt="Owl">
+        </div>        
+        
+        <div class="ppSectTitle ppSectTitleS1">
+            <h2>Owly</h2>
+
+            <p> Acrylic on Canvas </p>
+        </div>
+
+    </div>
+
+
+    <!-- Image 9 -->    
+    <div class="ppContainer ppContainerS2">
+        <div class="ppSectTitle ppSectTitleS2">
+            <h2>Eh Rawr</h2>
+
+            <p> Acrylic on Canvas </p>
+        </div>
+        
+        <div>
+            <img class="ppImg ppImgS2" src="assets/img/paintings/Lion.jpg" alt="Lion">
+        </div>
+    </div>
+
+
+    <!-- Image 10 -->
+    <div class="ppContainer ppContainerS1">
+        <div>
+            <img class="ppImg ppImgS1" src="assets/img/paintings/Tunnel.jpg" alt="Tunnel">
+        </div>
+        
+        <div class="ppSectTitle ppSectTitleS1">
+            <h2>Out the other side</h2>
+
+            <p> Acrylic on Canvas </p>
+        </div>
+    </div>
+
+
+    <!-- Image 11 -->
+    <div class="ppContainer ppContainerS2">
+        <div class="ppSectTitle ppSectTitleS2">
+            <h2>All the Signs</h2>
+
+            <p> Acrylic & Markers on Canvas </p>
+        </div>
+        
+        <div>
+            <img class="ppImg ppImgS2" src="assets/img/paintings/Wedding-Sign.jpg" alt="Wedding Sign">
+        </div>
+    </div>
+
+
+    <!-- Image 12 -->
+    <div class="ppContainer ppContainerS1">
+        <div>
+            <img class="ppImg ppImgS1" src="assets/img/paintings/Forest-River.jpg" alt="Forest River">
+        </div>
+        
+        <div class="ppSectTitle ppSectTitleS1">
+            <h2>Run Forest</h2>
+
+            <p> Acrylic on Canvas </p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- SVG - Bottom -->
+    <div class="globalBottomSVG">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg> 
+    </div>
+    
+
+    <!-- Footer -->
+     <div class="globalFootContainer">
+        <div class="globalFootSect1">
+            <h2> Sine Whooley </h2>
+            <!-- <hr> -->
+            <br>
+            <h3> Artist & UX/UI Design & Developer </h3>
+            <h4> Always happy to help!</h4>
+        </div>
+        
+        <div class="globalFootSect2">
+            <h2> Get in touch!</h2>
+            <br>
+            <ul>
+                <a href=""><i class="fa fa-envelope"></i>: sinewhooley@gmail.com </a>
+                <br>
+                <a href="https://www.linkedin.com/in/sine-whooley/"><i class="fa fa-linkedin"></i>: LinkedIn </a>
+                <br>
+                <a href="https://www.instagram.com/sines_artsy_things/?hl=en"><i class="fa fa-instagram"></i>: Instagram </a>
+            </ul>
+        </div>
+    </div> 
+
+
+    <!-- Footer Base - Copyright details -->
+    <div class="globalFootBase"> 
+        <br>
+        <hr>
+        <br>
+        <p><i class="fa fa-copyright"></i> 2026. Sine Whooley | All rights reserved | Designed and built with passion for Art and Technology. </p>
+    </div>
+
+
+
+    <script>
+        // Portfolio Navigation Drop Down - Home Page 
+        const displayPortMenuDropDown = document.getElementById('displayPortMenu');
+        let togglePort = false;
+
+        function displayPortDropDown()
+        {
+            console.log("Show Portfolio Drop Down Menu");
+
+            togglePort = !togglePort;
+            displayPortMenuDropDown.style.display = togglePort ? 'block' : 'none';
+        }
+    </script>
+
+
+    <!-- To include the JavaScript file -->
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

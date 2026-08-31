@@ -1,0 +1,88 @@
+.ddContainer {
+    display: flex;
+    justify-content: center;   /* horizontal */
+    align-items: center;       /* vertical */
+
+    margin: 2% 5%;
+    padding: 1% 2%;
+
+    border-radius: 15px;
+    /* background-image: linear-gradient(to bottom right, rgb(91, 173, 183), rgb(51, 97, 102));   */
+}
+
+.ddContainer div {
+    flex: 1;
+}
+
+.ddImg {
+    width: 40vw;
+    border: 2px solid black;
+    border-radius: 5%;
+}
+
+.ddSectTitle {
+    font-size: larger;
+    color: rgb(160, 255, 255);
+
+}
+
+
+
+
+
+
+
+.ddContainerS1 div:first-child {
+    flex: 50%;
+}
+
+.ddContainerS1 div:last-child {
+    flex: 50%;
+}
+
+.ddImgS1 {
+    margin-left: 5%;
+}
+
+.ddSectTitleS1 {
+    margin-left: 2%;
+    
+}
+
+
+
+
+
+
+
+
+.ddContainerS2 div:first-child {
+    flex: 50%;
+}
+
+.ddContainerS2 div:last-child {
+    flex: 50%;
+}
+
+.ddImgS2 {
+    margin-right: 5%;
+}
+
+.ddSectTitleS2 {
+    margin-right: 2%;
+    text-align: right;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .ddSectTitle {
+        font-size: medium;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .ddSectTitle {
+        font-size: small;
+    }
+}
